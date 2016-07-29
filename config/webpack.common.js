@@ -19,7 +19,7 @@ const HtmlElementsPlugin = require('./html-elements-plugin');
  */
 const METADATA = {
   title: 'Highlander',
-  baseUrl: '/',
+  baseUrl: './',
   isDevServer: helpers.isWebpackDevServer()
 };
 
