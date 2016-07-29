@@ -1,6 +1,6 @@
 <input id="cb2" type="checkbox" [checked]='isActive()' (change)="onChange($event)" class="tgl tgl-ios"/>
 <label for="cb2" class="tgl-btn inline"></label>
-<p class="status" [class.active]='isActive()'>{{ getMode() }} mode</p>
+<p class="status"> <i [class]="getIcon()"></i> {{ getMode() }} mode</p>
 
 <div class="card-container">
   <ul>

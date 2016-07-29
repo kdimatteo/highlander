@@ -39,12 +39,16 @@ export class Inbound {
     this.fetch();
   }
 
-  isActive(): boolean {
+  private getIcon(): string {
+    return this.isActive() ? 'icon-crown' : 'icon-forest';
+  }
+
+  private isActive(): boolean {
     return this.stopName == this.stops[1];
   }
 
-  getMode(): string {
-    return this.isActive() ? "Highlander" : "Lowlander";
+  private getMode(): string {
+    return this.isActive() ? "Highlander" : "Cedar Park";
   }
 
 }

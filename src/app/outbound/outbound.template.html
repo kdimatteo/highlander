@@ -3,11 +3,8 @@
     <li *ngFor="let trip of trainTrips">
       <i class="icon-train" aria-hidden="true"></i> {{ trip.trip_name }} 
     </li>
-  </ul>
-  <ul>
     <li *ngFor="let route of busTrips">
-      <i class="icon-bus" aria-hidden="true"></i> {{ route.route }} {{ route.startTime * 1000 | date: 'medium' }} {{ route.startLocation }} 
-      <!-- <i class="icon-bus" aria-hidden="true"></i> {{ route.route }} {{ route.startTime * 1000 | date:'hh:mm a' }} {{ route.startLocation }} -->
+      <i class="icon-bus" aria-hidden="true"></i> {{ route.route }} {{ route.startTime * 1000 | date:'hh:mm a' }} {{ route.startLocation }}
     </li>
   </ul>
 
