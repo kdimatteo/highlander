@@ -1,0 +1,11 @@
+<input id="cb2" type="checkbox" [checked]='isActive()' (change)="onChange($event)" class="tgl tgl-ios"/>
+<label for="cb2" class="tgl-btn inline"></label>
+<p class="status" [class.active]='isActive()'>{{ getMode() }} mode</p>
+
+<div class="card-container">
+  <ul>
+    <li *ngFor="let trip of trips">
+    Depart {{ stopName }}: {{ trip.sch_arr_dt * 1000 | date:'h:mm a' }} 
+    </li>
+  </ul>
+</div>
