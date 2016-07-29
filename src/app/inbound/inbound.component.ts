@@ -27,8 +27,8 @@ export class Inbound {
     this.stopName = this.storage.retrieve('preferredStop') || 'Melrose Highlands';
   }
 
-  private fetch(){
-    this.trains.getInbound(this.stopName).subscribe(res => { 
+  private fetch() {
+    this.trains.getInbound(this.stopName).subscribe(res => {
       this.trips = res;
     });
   }
@@ -44,11 +44,11 @@ export class Inbound {
   }
 
   private isActive(): boolean {
-    return this.stopName == this.stops[1];
+    return this.stopName === this.stops[1];
   }
 
   private getMode(): string {
-    return this.isActive() ? "Highlander" : "Cedar Park";
+    return this.isActive() ? 'Highlander' : 'Cedar Park';
   }
 
 }

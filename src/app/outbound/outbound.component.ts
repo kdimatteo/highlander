@@ -28,19 +28,19 @@ import { Trains } from '../common/trains.service';
 export class Outbound {
   trainTrips = [];
   busTrips = [];
-  
+
   constructor(public appState: AppState, public trains: Trains) {
     //
   }
 
   ngOnInit() {
-    this.trains.getOutboundTrain('CR-Haverhill').subscribe(res => { 
+    this.trains.getOutboundTrain('CR-Haverhill').subscribe(res => {
       this.trainTrips = res;
     });
 
-    this.trains.getOutboundBus('131,136,137').subscribe(res => { 
-      this.busTrips = res; 
+    this.trains.getOutboundBus('131,136,137').subscribe(res => {
+      this.busTrips = res;
     });
-    
+
   }
 }
