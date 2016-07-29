@@ -18,7 +18,7 @@ import { AppState } from './app.service';
   template: `
     <div class="btn-group btn-group-justified" role="group">
       <a [routerLink]="['./inbound']" [routerLinkActive]="['active']" role="button" class="btn">Inbound</a>
-      <a [routerLink]="['./outbound']" [routerLinkActive]="['active']" role="button" class="btn">Outbound</a>
+      <a [routerLink]="['./']" [routerLinkActive]="['active']" role="button" class="btn active">Outbound</a>
     </div>
 
     <main>
@@ -29,8 +29,7 @@ import { AppState } from './app.service';
 export class App {
   loading: Boolean = false;
 
-  constructor(
-    public appState: AppState) {
+  constructor(public appState: AppState) {
 
   }
 
