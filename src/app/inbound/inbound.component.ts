@@ -23,8 +23,8 @@ export class Inbound {
   constructor(public appState: AppState, private trains: Trains, private storage: LocalStorageService) { }
 
   ngOnInit() {
-    this.fetch();
     this.stopName = this.storage.retrieve('preferredStop') || 'Melrose Highlands';
+    this.fetch(); 
   }
 
   private fetch() {
