@@ -24,7 +24,7 @@ export class Inbound {
 
   ngOnInit() {
     this.stopName = this.storage.retrieve('preferredStop') || 'Melrose Highlands';
-    this.fetch(); 
+    this.fetch();
   }
 
   private fetch() {
